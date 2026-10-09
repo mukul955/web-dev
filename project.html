@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EduLearn</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #eef2f7;
+}
+
+nav {
+  background: #1e3c72;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.marq{
+  background-color: rgb(9, 122, 183);
+  font-weight: bold;
+  padding: 10px;
+}
+button {
+  padding: 10px;
+  border: none;
+  background: #0072ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.features {
+  text-align: center;
+  padding: 40px;
+}
+
+.features div {
+  margin: 10px;
+}
+
+footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="project.html">Home</a>
+<a href="html.html">HTML</a>
+<a href="css.html">CSS</a>
+<a href="js.html">JavaScript</a>
+</nav>
+
+<div class="hero">
+<h1>Welcome to EduSmart 🚀</h1>
+<p>Learn HTML, CSS & JavaScript Easily</p>
+<button onclick="start()">Start Learning</button>
+</div>
+<div class="marq">
+  <marquee behavior="" direction="right to left">Batch starts from 1 May 2026, limited seats available, First come first services basis.</marquee>
+</div>
+<div class="container">
+
+<div class="card">
+<h2>HTML</h2>
+<p>Structure of web pages</p>
+<a href="html.html"><button>Learn</button></a>
+</div>
+
+<div class="card">
+<h2>CSS</h2>
+<p>Style your website</p>
+<a href="css.html"><button>Learn</button></a>
+</div>
+
+<div class="card">
+<h2>JavaScript</h2>
+<p>Make it interactive</p>
+<a href="js.html"><button>Learn</button></a>
+</div>
+
+</div>
+
+<div class="features">
+<h2>Why Choose EduSmart?</h2>
+<div>✔ Easy explanations</div>
+<div>✔ Interactive examples</div>
+<div>✔ Beginner friendly</div>
+<div>✔ Quiz included</div>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h3>Mini Quiz</h3>
+<p>HTML is used for?</p>
+
+<button onclick="quiz('a')">Structure</button>
+<button onclick="quiz('b')">Styling</button>
+
+<p id="result"></p>
+</div>
+
+<div class="card">
+<h3>Progress</h3>
+<p>Complete your learning</p>
+<progress value="30" max="100"></progress>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 EduSmart | MBA Project</p>
+</footer>
+
+<script>
+function start(){
+alert("Start Learning Now!");
+}
+
+function quiz(ans){
+let r = document.getElementById("result");
+
+if(ans === "a"){
+r.innerHTML = "✅ Correct!";
+r.style.color = "green";
+}else{
+r.innerHTML = "❌ Wrong!";
+r.style.color = "red";
+}
+}
+</script>
+
+</body>
+</html>

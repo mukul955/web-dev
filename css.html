@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn CSS</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f7fb;
+}
+
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.lesson {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+
+code {
+  display: block;
+  background: #3b3737;
+  color: #0f0;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+ul {
+  text-align: left;
+}
+.box-img{
+    float: right;
+    height: 200px;
+}
+button {
+  padding: 10px;
+  margin: 10px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.progress {
+  width: 100%;
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.bar {
+  height: 100%;
+  width: 70%;
+  background: #0d6efd;
+  border-radius: 10px;
+}
+footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>CSS Learning</h1>
+  <nav>
+    <a href="project.html">Home</a>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="js.html">JavaScript</a>
+  </nav>
+</header>
+
+<section class="lesson">
+
+<h2>What is CSS?</h2>
+<p>
+CSS (Cascading Style Sheets) is used to design and style web pages.
+It controls colors, layout, spacing, and fonts.
+</p>
+
+<h3>Why CSS is Important</h3>
+<ul>
+<li>Makes website attractive</li>
+<li>Separates design from HTML</li>
+<li>Improves user experience</li>
+</ul>
+
+<h3>CSS Syntax</h3>
+<code>
+selector { <br>
+  property: value; <br>
+}
+</code>
+
+<h3>Example</h3>
+<code>
+h1 { <br>
+  color: blue; <br>
+  font-size: 30px; <br>
+}
+</code>
+
+<h3>Types of CSS</h3>
+<ul>
+<li>Inline CSS</li>
+<li>Internal CSS</li>
+<li>External CSS</li>
+</ul>
+
+<h3>Selectors</h3>
+<ul>
+<li>Element → h1, p</li>
+<li>Class → .box</li>
+<li>ID → #main</li>
+</ul>
+
+<h3>Box Model</h3>
+<ul>
+<li>Content</li>
+<li>Padding</li>
+<li>Border</li>
+<li>Margin</li>
+<img src="css-box-model.png" class="box-img">
+</ul>
+
+<h3>Common Properties</h3>
+<ul>
+<li>color</li>
+<li>background</li>
+<li>margin</li>
+<li>padding</li>
+<li>border</li>
+</ul>
+
+<h3>Mini Practice</h3>
+<code>
+p { <br>
+  color: green; <br>
+  font-size: 18px; <br>
+}
+</code>
+
+<h3>Progress</h3>
+<div class="progress">
+  <div class="bar"></div>
+</div>
+
+<h3>Quick Quiz</h3>
+<p>CSS stands for?</p>
+
+<button onclick="check('a')">Cascading Style Sheets</button>
+<button onclick="check('b')">Creative Style System</button>
+
+<p id="result"></p>
+
+</section>
+<footer>
+<p>© 2026 EduSmart | MBA Project</p>
+</footer>
+<script>
+function check(ans){
+  let r = document.getElementById("result");
+
+  if(ans === "a"){
+    r.innerHTML = "✅ Correct!";
+    r.style.color = "green";
+  } else {
+    r.innerHTML = "❌ Wrong!";
+    r.style.color = "red";
+  }
+}
+</script>
+
+</body>
+</html>

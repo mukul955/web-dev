@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn HTML</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f7fb;
+}
+
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.lesson {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+code {
+  display: block;
+  background: #3b3737;
+  color: #0f0;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+ul {
+  text-align: left;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.progress {
+  width: 100%;
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.bar {
+  height: 100%;
+  width: 50%;
+  background: #0d6efd;
+  border-radius: 10px;
+}
+footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>HTML Learning</h1>
+  <nav>
+    <a href="project.html">Home</a>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="js.html">JavaScript</a>
+  </nav>
+</header>
+
+<section class="lesson">
+
+  <h2>What is HTML?</h2>
+  <p>
+    HTML (Hyper Text Markup Language) is used to create the structure of web pages.
+  </p>
+
+  <h3>Basic Structure</h3>
+  <code>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;&lt;/head&gt;<br>
+&lt;body&gt;Hello&lt;/body&gt;<br>
+&lt;/html&gt;
+  </code>
+
+  <h3>Important Tags</h3>
+  <ul>
+    <li>&lt;h1&gt; → Heading</li>
+    <li>&lt;p&gt; → Paragraph</li>
+    <li>&lt;a&gt; → Link</li>
+    <li>&lt;img&gt; → Image</li>
+    <li>&lt;header&gt; → header</li>
+  </ul>
+
+  <h3>Example</h3>
+  <code>&lt;h1&gt;Welcome&lt;/h1&gt;</code>
+
+  <h3>Uses of HTML</h3>
+  <ul>
+    <li>Create web pages</li>
+    <li>Structure content</li>
+    <li>Embed images/videos</li>
+  </ul>
+
+  <h3>Progress</h3>
+  <div class="progress">
+    <div class="bar"></div>
+  </div>
+
+  <h3>Quick Quiz</h3>
+  <p>HTML stands for?</p>
+
+  <button onclick="check('a')">Hyper Text Markup Language</button>
+  <button onclick="check('b')">High Tech Modern Language</button>
+
+  <p id="result"></p>
+
+</section>
+
+<footer>
+<p>© 2026 EduSmart | MBA Project</p>
+</footer>
+<script>
+function check(ans){
+  let r = document.getElementById("result");
+
+  if(ans === "a"){
+    r.innerHTML = "✅ Correct!";
+    r.style.color = "green";
+  } else {
+    r.innerHTML = "❌ Wrong!";
+    r.style.color = "red";
+  }
+}
+</script>
+
+</body>
+</html>

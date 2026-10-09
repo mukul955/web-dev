@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Learning</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(150deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+code {
+  display: block;
+  background: black;
+  color: #00ffcc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #00ffcc;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.output {
+  background: black;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: yellow;
+}
+
+.progress {
+  width: 100%;
+  background: #333;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.bar {
+  width: 70%;
+  height: 100%;
+  background: #00ffcc;
+  border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>⚡ JavaScript Learning</header>
+
+<div class="container">
+
+<div class="card">
+<h2>What is JavaScript?</h2>
+<p>JavaScript makes web pages interactive.</p>
+</div>
+
+<div class="card">
+<h2>Variables</h2>
+<code>
+let name = "Mukul";
+</code>
+</div>
+
+<div class="card">
+<h2>Functions</h2>
+<code>
+function jod() { <br>
+ alert("Hello!"); <br>
+}
+</code>
+<button onclick="jod()">Try Function</button>
+</div>
+
+<div class="card">
+<h2>Events</h2>
+<p>Click button to change text:</p>
+<button onclick="changeText()">Click Me</button>
+<p id="text">Hello</p>
+</div>
+
+<div class="card">
+<h2>Live Example</h2>
+<button onclick="showDate()">Show Date</button>
+<div class="output" id="output"></div>
+</div>
+
+<div class="card">
+<h2>Progress</h2>
+<div class="progress">
+<div class="bar"></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Quiz</h2>
+<p>JavaScript is used for?</p>
+
+<button onclick="check('a')">Interactivity</button>
+<button onclick="check('b')">Styling</button>
+
+<p id="result"></p>
+</div>
+
+</div>
+
+<script>
+function jod(){
+alert("Hello Student!");
+}
+
+function changeText(){
+document.getElementById("text").innerHTML = "You clicked!";
+}
+
+function showDate(){0
+document.getElementById("output").innerHTML = new Date();
+}
+
+function check(ans){
+let r = document.getElementById("result");
+
+if(ans === "a"){
+r.innerHTML = "✅ Correct!";
+r.style.color = "lightgreen";
+}else{
+r.innerHTML = "❌ Wrong!";
+r.style.color = "red";
+}
+}
+</script>
+
+</body>
+</html>
